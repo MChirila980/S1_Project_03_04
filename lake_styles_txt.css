@@ -1,12 +1,81 @@
-﻿@/*
+﻿@charset 'utf-8';
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('tff');
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('tff');
+}
+
+/*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 4
    
    Great Lakescape Lodge Style Sheet
-   Author: 
-   Date:   
+   Author: Melinda Chirila
+   Date:   9/13/2018
    
    Filename: lake_styles.css
 
 */
+/* Setting the background for the chosen image. */
+html {
+    background-color: rgb(248, 144, 26);
+    background: url('sunset.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+/* Background transparancy color, and changed the font for the whole website.  */
+body {
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 2em;
+    font-family: Dobkin, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+nav {
+    background-color: rgba(255, 153, 70, 0.781);
+}
+
+/* This is so that whenever i hover over one of the links at the top of the page, then the color becomes inverted. */
+nav a:hover,
+nav a:active {
+    color: rgba(255, 153, 70, 0.781);
+    background-color: rgb(0, 0, 0);
+
+}
+
+/* Changing the Notes section and the events section background to white.  */
+aside#Notes {
+    background-color: rgb(255, 255, 255);
+}
+
+aside#Events {
+    background-color: rgb(255, 255, 255);
+
+}
+
+aside#Events p {
+    padding: 10px;
+
+}
+
+/* Text-align is so that the text of the sections is in the center. */
+aside#Events h1,
+aside#Events h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
